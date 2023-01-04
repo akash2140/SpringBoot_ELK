@@ -43,7 +43,7 @@ Steps to be Followed:
 5.  Open Logstash Folder and open the logstash.conf file.
 
       Add the following content to it:
-
+      ```
       input {
         file {
           type => "log"
@@ -70,7 +70,7 @@ Steps to be Followed:
           hosts => ["localhost:9200"]
         }
       }    
-      
+  ```    
 In the input, you have specified the type and the complete path of your file. Note that the value of the path must be absolute and cannot be relative.
 In filters, wherever in the logs you will find a Tab character(\t) followed by "at", you will tag that entry as a stacktrace of an error. Grok is simply a filter plugin useful to parse and apply queries to unstructured data in Logstash.
 In the output, you have defined a response that prints to the STDOUT of the console running Logstash using output codecs.    
