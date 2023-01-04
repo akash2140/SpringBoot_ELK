@@ -7,6 +7,7 @@ Steps to be Followed:
 
   To make sure the Elasticsearch cluster is up and working fine, open the browser at http://localhost:9200
   You will see Following Response:
+  ```
   {
   "name" : "LAPTOP-UJ1121L9",
   "cluster_name" : "elasticsearch",
@@ -24,7 +25,7 @@ Steps to be Followed:
   },
   "tagline" : "You Know, for Search"
   }
-  
+  ```
   
 2. Kibana
       Setting up Kibana is similar to Elasticsearch. Just download the latest version application from the official website.
